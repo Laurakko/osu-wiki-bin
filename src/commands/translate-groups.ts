@@ -218,7 +218,7 @@ const groups: Group[] = [
     translate: (content, enContent, { enInfo, getString, spLanguageReplacer }) => {
       const enTableMatches = [...enContent.matchAll(/(?<=^\| :-- \| :-- \|\n)(?:\|.+\n)+/gm)];
 
-      if (enTableMatches.length !== 4) {
+      if (enTableMatches.length !== 6) {
         return TranslateError.EnStructure;
       }
 
